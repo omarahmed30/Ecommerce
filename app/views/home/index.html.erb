@@ -1,0 +1,194 @@
+<div id="carousle-background">
+    <div class="container" >
+        <div class="jumbotron ">
+            <div class="container text-center">
+                <div class="container" >   
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <% produc = @products.first %>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active ">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                    <img src="<%= produc.image%>" width="475px" height="550px" class="img-rounded " >
+                                    </div>
+                                    <div class="col-md-6">
+                                    <img src="<%= produc.image%>" width="475px" height="550px" class="img-rounded" >
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="<%= produc.image%>" width="475px" height="550px" class="img-rounded " >
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="<%= produc.image%>" width="475px" height="550px" class="img-rounded" >
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="<%= produc.image%>" width="475px" height="550px" class="img-rounded " >
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="<%= produc.image%>" width="475px" height="550px" class="img-rounded" >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+
+    <div class="container-fluid bg-3 text-center">    
+        <h3>Some of my Work</h3><br>
+        <div class="row">
+            <% @products.each do |p| %>
+                <div class="col-sm-3">
+                    <p>Some text..</p>
+                    <img src="<%= p.image %>"  class="img-responsive"  style="width:100%" alt="Image">
+                </div>
+            <% end %>
+        </div>
+    </div>
+    </div><br>
+</div>
+
+
+
+<div class="container-fluid bg-3 text-center">    
+    <div class="row">
+        <div class="col-sm-3">
+            <p>Some text..</p>
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-3"> 
+            <p>Some text..</p>
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-3"> 
+            <p>Some text..</p>
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-3">
+            <p>Some text..</p>
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+    </div>
+    </div><br><br>
+</div>
+
+
+
+
+
+
+
+
+
+<footer class="container-fluid text-center">
+<p>Footer Text</p>
+</footer>
+
+
+
+
+
+
+
+
+
+<h1> I m home </h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      One of three columns
+    </div>
+    <div class="col-sm-4">
+      One of three columns
+    </div>
+    <div class="col-sm-4">
+      One of three columns
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      1 of 2
+    </div>
+    <div class="col-md-6">
+      2 of 2
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
