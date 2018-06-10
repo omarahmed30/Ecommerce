@@ -4,4 +4,8 @@ Rails.application.routes.draw do
   root  'home#index'
 
   resources :products, only: [:index]
+
+  get "products/female", to: "products#female"
+  get "products/:gender", to: "products#male"
+
 end
