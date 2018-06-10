@@ -1,9 +1,21 @@
-<% @products.each do |product| %>
-   <img src="<%= product.image%>" >
-   <%= product.description %>
+
+<div class="container">
+
+    <div class="container-fluid bg-3 text-center">    
+        <h3>Some of my Work</h3><br>
+        <div class="row">
+            <% @products.each do |p| %>
+                <div class="col-sm-3">
+                    <p>Some text..</p>
+                    <img src="<%= p.image %>"  class="img-responsive"  style="width:100%" alt="Image">
+                </div>
+            <% end %>
+        </div>
+    </div>
+    </div><br>
+</div>
+
+
+<% if @products.blank? %>
+  <h4>There are no products containing the term <%= params[:search] %>.</h4>
 <% end %>
-
-
-
-
-

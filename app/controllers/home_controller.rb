@@ -4,4 +4,4 @@ class HomeController < ApplicationController
       @products = Product.all
     end
 
-  end
+end
