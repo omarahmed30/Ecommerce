@@ -8,8 +8,8 @@ class ChargesController < ApplicationController
       
       # Amount in cents
       @amount = params[:price].to_i
-    
-    
+     
+        
       customer = Stripe::Customer.create(
         :email => params[:stripeEmail],
         :source  => params[:stripeToken]
