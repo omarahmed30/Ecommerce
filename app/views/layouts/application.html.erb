@@ -33,7 +33,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/products/male">Male</a></li>
+            <li class="active"><%= link_to "Male", products_male_path %></li>
             <li><a href="/products">Products</a></li>
             <li><a href="/products/female">Female</a></li>
             <li><a href="#">Contact</a></li>
@@ -58,9 +58,9 @@
       </div>
     </nav>
  
-  
-    <%= yield %>
-
+    <div class="container">
+      <%= yield %>
+    </div>
     
     <footer class="container-fluid text-center">
       <p>Footer Text</p>

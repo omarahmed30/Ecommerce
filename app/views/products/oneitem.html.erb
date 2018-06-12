@@ -1,0 +1,39 @@
+<script src="https://js.stripe.com/v3/"></script>
+
+<h1> I am one item page </h1>
+
+<img src="<%= @product.image %>"  class="img-responsive"  style="width:300px height:350px" alt="Image"></a>
+<h4><%= @product.price %><h4>
+<h4><%= @product.description %><h4>
+
+
+
+<%= form_tag charges_path do %>
+    <input id="price" name="price" type="number" value= "<%= @product.price %>" />
+    
+    <article>
+      <% if flash[:error].present? %>
+        <div id="error_explanation">
+            <p><%= flash[:error] %></p>
+        </div>
+      <% end %>
+      <label class="amount">
+        <span>Amount: $<%= @product.price %></span>
+      </label>
+    </article>
+    
+    
+    
+    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+      data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+      data-amount="<%= @product.price %>"
+      data-locale="auto">
+    </script>
+ <% end %>
+
+
+
+
+
+
+

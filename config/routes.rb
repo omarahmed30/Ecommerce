@@ -3,9 +3,11 @@ Rails.application.routes.draw do
 
   root  'home#index'
 
-  resources :products, only: [:index]
-
+  resources :products, only: [:index,]
+  resources :charges
   get "products/female", to: "products#female"
-  get "products/:gender", to: "products#male"
+  get "products/male", to: "products#male"
+  get "products/oneitem/:id", to: "products#oneitem"
+  
 
 end
