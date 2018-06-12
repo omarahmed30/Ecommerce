@@ -1,13 +1,12 @@
-
 <div class="container">
 
     <div class="container-fluid bg-3 text-center">    
-        <h3>Some of my Work</h3><br>
+        <h3>I am the index page</h3><br>
         <div class="row">
             <% @products.each do |p| %>
                 <div class="col-sm-3">
                     <p>Some text..</p>
-                    <img src="<%= p.image %>"  class="img-responsive"  style="width:100%" alt="Image">
+                    <a href="products/oneitem/<%= p.id %>"> <img src="<%= p.image %>"  class="img-responsive"  style="width:100%" alt="Image"></a>
                 </div>
             <% end %>
         </div>

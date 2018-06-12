@@ -18,4 +18,8 @@ class ProductsController < ApplicationController
         @products = Product.all.where( gender: "male")
         render  "index"
     end
+    
+    def oneitem
+        @product = Product.find(params[:id])
+    end
 end
