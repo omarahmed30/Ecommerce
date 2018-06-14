@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ecommerce</title>
-
+    <title>Dress Up</title>
+    <%= favicon_link_tag asset_path('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHMQlwAPw7Kl8dZmy4gPEFkXtUcLLIk8c0Unynd6zefEGcPZgH'), :rel => 'icon', :type =>  'image/png' %>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -29,14 +29,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        
           </button>
-          <a class="navbar-brand" href="/">Global Fashion</a>
+          <a class="navbar-brand" href="/">Dress Up</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-          <li><%= link_to "Female", products_female_path %></li>
-            <li class="active"><%= link_to "Male", products_male_path %></li>
+          <li ><%= link_to "Female", products_female_path %></li>
+            <li ><%= link_to "Male", products_male_path %></li>
             <li><%= link_to "Kids", products_kids_path %></li>
-            <li><%= link_to "Products", products_path %></li>
+            
             
             <li><a href="/contact">Contact</a></li>
           </ul>
@@ -64,9 +64,8 @@
       <%= yield %>
     </div>
     
-    <footer class="container-fluid text-center">
-      <p>&copy; Global Fashion 2018</p>
-    </footer>
+    <%= render "layouts/footer" unless @skip_footer %>
+    
 
   </body>
 </html>

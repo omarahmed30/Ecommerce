@@ -11,7 +11,9 @@ Rails.application.routes.draw do
   get "products/kids", to: "products#kids"
   get "products/oneitem/:id", to: "products#oneitem"
   get "charges/create", to: "charges#create"
+  post "charges/create", to: "charges#create"
   get "/contact", to: "home#contact"
+  get "/oneitem/:id", to: "products#oneitem"
   
 
 end

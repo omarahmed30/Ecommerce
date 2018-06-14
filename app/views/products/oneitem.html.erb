@@ -1,38 +1,35 @@
 <script src="https://js.stripe.com/v3/"></script>
+<center>
+    <br><br>
+    <img src="<%= @product.image %>"    width="400px" height="500px" alt="Image"></a>
+    <br><br>
+    <h4><h4>
 
-<h1> I am one item page </h1>
+    <%= form_tag charges_create_path do %>
+        
+        <input id="price" name="price" type="hidden" value= "<%= 100 * @product.price %>" />
+        
+        <article>
+        <% if flash[:error].present? %>
+            <div id="error_explanation">
+                <p><%= flash[:error] %></p>
+            </div>
+        <% end %>
+        <label class="amount">
+            <span>Amount: $<%= @product.price %></span>
+        </label>
+        </article>
+        
+        
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+        data-amount="<%= 100 * @product.price %>"
+        data-locale="auto">
+        </script>
+    <% end %>
 
-<img src="<%= @product.image %>"  class="img-responsive"  style="width:300px height:350px" alt="Image"></a>
-
-<h4><%= @product.description %><h4>
-
-
-
-<%= form_tag charges_create_path do %>
-    <input id="price" name="price" type="hidden" value= "<%= @product.price %>" />
-    
-    <article>
-      <% if flash[:error].present? %>
-        <div id="error_explanation">
-            <p><%= flash[:error] %></p>
-        </div>
-      <% end %>
-      <label class="amount">
-        <span>Amount: $<%= @product.price %></span>
-      </label>
-    </article>
-    
-    
-    <% @amount = number_to_currency(@product.price * 100) %>
-    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-      data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-      data-amount="<%= @amount %>"
-      data-locale="auto">
-    </script>
- <% end %>
-
-
-
+    <br><Br><br><br>
+</center>
 
 
 

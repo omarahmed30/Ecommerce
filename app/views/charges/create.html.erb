@@ -1,2 +1,7 @@
-<h1> I am charges CREATE.html.erb </h1>
-<h2>Thanks, you paid <strong> $ <%= @amount %> dollars</strong></h2>
+<br><br><br><br><br><br><br><br><br><br><br>
+<center class="text-primary">
+    <h2>Thank You for the order</h2>
+
+    <h3> You paid <strong class="text-success"> $ <%= @amount/100.0 %> </strong></h3>
+    <h3> Your confirmation number is <%= rand.to_s[2..11] %> </h3>
+</center>
