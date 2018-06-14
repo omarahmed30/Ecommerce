@@ -26,5 +26,11 @@ class ProductsController < ApplicationController
     
     def oneitem
         @product = Product.find(params[:id])
+
+       
+    end
+
+    def non_footer_action
+        @skip_footer = true
     end
 end

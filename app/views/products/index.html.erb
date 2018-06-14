@@ -1,12 +1,14 @@
 <div class="container">
 
     <div class="container-fluid bg-3 text-center">    
-        <h3>I am at the index page in PRODUCTS directory</h3><br>
+        <br><br><br>
         <div class="row">
             <% @products.each do |p| %>
                 <div class="col-sm-3">
-                    <p>Some text..</p>
                     <a href="oneitem/<%= p.id %>"> <img src="<%= p.image %>"  class="img-responsive"  style="width:100%" alt="Image"></a>
+                    <a href ="oneitem/<%=p.id %>" ><h3>$ <%= p.price %></h3></a>
+                    <br>
+
                 </div>
             <% end %>
         </div>
@@ -18,3 +20,6 @@
 <% if @products.blank? %>
   <h4>There are no products containing the term <%= params[:search] %>.</h4>
 <% end %>
+
+
+

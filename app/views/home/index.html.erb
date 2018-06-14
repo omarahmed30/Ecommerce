@@ -1,5 +1,5 @@
 
-<div id="">
+<div id="amazingslider-wrapper-1">
     <div class="container" >
         <div class="jumbotron ">
             <div class="container text-center">
@@ -13,9 +13,9 @@
                         </ol>
                         <% produc = @products.first %>
                         <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active ">
-                                <div class="row">
+                        <div class="carousel-inner hidden-sm-down">
+                            <div class="item active hidden-sm-down ">
+                                <div class="row ">
                                     <div class="col-md-6">
                                     <img src="<%= produc.image%>" width="475px" height="550px" class="img-rounded " >
                                     </div>
@@ -25,7 +25,7 @@
                                 </div>
                             </div>
                             
-                            <div class="item">
+                            <div class="item hidden-sm-down">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <img src="https://i.pinimg.com/originals/43/c3/c6/43c3c6108a6afc944ddc682eb83a1418.jpg" width="475px" height="550px" class="img-rounded " >
@@ -36,7 +36,7 @@
                                 </div>
                             </div>
                           
-                            <div class="item">
+                            <div class="item hidden-sm-down">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <img src="http://picture-cdn.wheretoget.it/wt7alh-l-610x610-dress-salwar+kameez-clothing-women+clothing-women+dress-bollywood+dress-bollywood+salwar+kameez-anarkali+kameez-designer+salwar+kameez-indian+dress-party+wear+salwar+kameez.jpg" width="475px" height="550px" class="img-rounded " >
@@ -70,11 +70,11 @@
 <div class="container">
 
     <div class="container-fluid bg-3 text-center">    
-        <h3 >Some New Trends For Everyone</h3><br>
+        <h3 class="trends-font" >New Trends For Everyone</h3><br>
         <div class="row">
             <% @products.each do |p| %>
                 <div class="col-sm-3">
-                    <br>
+                    <br><br><br>
                     <img src="<%= p.image %>"  class="img-responsive"  style="width:100%" alt="Image">
                 </div>
             <% end %>
@@ -104,7 +104,6 @@
 
 
 
-<h1> I am at HOME INDEX page </h1>
 
 
 
