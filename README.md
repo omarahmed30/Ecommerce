@@ -22,16 +22,6 @@ http://dressupp.herokuapp.com/
 <img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_1489695931/postgresql.png"  width="100px">
 * Postgres was our choice for database and it also works well with heroku.
 
-
-
-
-
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
 * Ruby version
 `ruby 2.5.1`
 * System dependencies
@@ -42,4 +32,5 @@ Things you may want to cover:
 
 `rake db:seed`
 * Database initialization
+
 `rake db:migrate`
