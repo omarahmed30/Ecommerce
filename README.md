@@ -20,17 +20,16 @@ http://dressupp.herokuapp.com/
 * Ruby on Rails is an open-source server-seide programing language which helped me made this blog
 
 <img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_1489695931/postgresql.png"  width="100px">
-* Postgres was our choice for database and it also works well with heroku.
+* Postgres was my choice for database in production, and it also works well with heroku.
 
 * Ruby version
-`ruby 2.5.1`
-* System dependencies
 
-* Configuration
+`ruby 2.5.1`
 
 * Database creation
 
 `rake db:seed`
+
 * Database initialization
 
 `rake db:migrate`
