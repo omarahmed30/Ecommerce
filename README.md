@@ -48,6 +48,6 @@ http://dressupp.herokuapp.com/
 
 Finally
 * ` rails s`
-
+* Enter `localhost:3000` on your browser to run the application
 
 
