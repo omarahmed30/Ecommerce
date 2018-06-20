@@ -21,19 +21,33 @@ http://dressupp.herokuapp.com/
 * It is a programming language that lets you insert bits of code into a website to make pages more versatile.
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/1200px-Ruby_On_Rails_Logo.svg.png"  width="100px">
-* Ruby on Rails is an open-source server-seide programing language which helped me made this blog
-
+* Ruby on Rails is an open-source server-seide programing language which helped me made this application
+* Ruby version
+`ruby 2.5.1`
+* Rails version
+`rails 5.1`
 <img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_1489695931/postgresql.png"  width="100px">
 * Postgres was my choice for database in production, and it also works well with heroku.
 
-* Ruby version
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/SQLite370.svg/1280px-SQLite370.svg.png"  width="100px">
+* Sqlite was used in development which is a lite database engine.
 
-`ruby 2.5.1`
+<img src="https://jfdi.info/wp-content/uploads/bootstrap.png" width="100px">
+* Bootstrap is open-source front-end framework library which helps with styling an application.
+
+
+## Getting Started
+* Clone or fork the repository to your local computer.
+* Follow these commands
 
 * Database creation
-
 `rake db:seed`
 
 * Database initialization
-
 `rake db:migrate`
+
+Finally
+* ` rails s`
+
+
+
